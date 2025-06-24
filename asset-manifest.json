@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6881c57e.css",
+    "main.js": "/static/js/main.6d49e5f6.js",
+    "static/js/453.5b446523.chunk.js": "/static/js/453.5b446523.chunk.js",
+    "static/media/Imagen1.jpg": "/static/media/Imagen1.dd09ab8d9c2a9cd09894.jpg",
+    "static/media/trayectoria.jpg": "/static/media/trayectoria.df0f214ef7fe4ff94ccc.jpg",
+    "static/media/stem.png": "/static/media/stem.41166e19019c9d2f55e3.png",
+    "static/media/curso de combustion.jpg": "/static/media/curso de combustion.b13cf2d0991a49a1da2e.jpg",
+    "static/media/Imagen2.jpg": "/static/media/Imagen2.baaad00026b196b93228.jpg",
+    "static/media/consultoria en sistemas de gestion.jpg": "/static/media/consultoria en sistemas de gestion.baaad00026b196b93228.jpg",
+    "static/media/auditoria de seguridad.jpg": "/static/media/auditoria de seguridad.28c98c3fea8cdef3fc31.jpg",
+    "static/media/auditoria energetica.jpg": "/static/media/auditoria energetica.24fa1713355cd11f1070.jpg",
+    "static/media/consultor.jpg": "/static/media/consultor.7edae7c6dd65528b2280.jpg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.6881c57e.css.map": "/static/css/main.6881c57e.css.map",
+    "main.6d49e5f6.js.map": "/static/js/main.6d49e5f6.js.map",
+    "453.5b446523.chunk.js.map": "/static/js/453.5b446523.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6881c57e.css",
+    "static/js/main.6d49e5f6.js"
+  ]
+}
