@@ -1,0 +1,25 @@
+
+.actualidad-section {
+  background-color: #0c1a2b;
+  padding: 3rem 1rem;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.actualidad-title {
+  font-size: 2rem;
+  color: #d4af37;
+  margin-bottom: 1rem;
+}
+
+.actualidad-subtitle {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-bottom: 2rem;
+}
+
+.actualidad-widget {
+  max-width: 1000px;
+  margin: 0 auto;
+}

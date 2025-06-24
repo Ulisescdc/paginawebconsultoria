@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.trayectoria-section {
+  background-image: url('../assets/trayectoria.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 4rem 2rem 5rem;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 90vh;
+  position: relative;
+}
+
+/* Eliminamos la sombra oscura que apagaba la imagen */
+.trayectoria-section::before {
+  content: none;
+}
+
+/* Bloques tipo vidrio esmerilado (frosted glass) */
+.consultor-card,
+.portafolio-block {
+  position: relative;
+  background: rgba(17, 27, 46, 0.4); /* semi-transparente */
+  backdrop-filter: blur(8px); /* difuminado elegante */
+  -webkit-backdrop-filter: blur(8px);
+  border: 1.5px solid #4169a1;
+  border-radius: 14px;
+  padding: 2rem;
+  width: 47%;
+  max-width: 680px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+  z-index: 1;
+}
+
+/* Consultor */
+.consultor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  margin-top: 3.5rem;
+}
+
+.consultor-foto {
+  width: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.consultor-texto h2 {
+  color: #d4af37;
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.consultor-texto p {
+  font-size: 0.88rem;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+/* Portafolio */
+.portafolio-block {
+  font-size: 0.75rem;
+  margin-inline: auto;
+  margin-top: 2rem;
+  max-width: 620px;
+}
+
+.portafolio-block h3 {
+  font-size: 1rem;
+  color: #d4af37;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.portafolio-lista {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #ffffff;
+}
+
+.portafolio-lista li {
+  margin-bottom: 0.4rem;
+  text-align: justify;
+  line-height: 1.45;
+}
+
+/* Ocultamos la imagen inferior que ya no se necesita */
+.imagen-trayectoria {
+  display: none;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .trayectoria-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem 4rem;
+  }
+
+  .consultor-card,
+  .portafolio-block {
+    width: 95%;
+    font-size: 0.85rem;
+  }
+
+  .consultor-foto {
+    width: 70px;
+  }
+
+  .consultor-texto h2,
+  .portafolio-block h3 {
+    font-size: 0.95rem;
+  }
+}
+ 
