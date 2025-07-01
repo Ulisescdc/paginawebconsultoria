@@ -1,0 +1,137 @@
+.servicios-section {
+  background-color: #0c1a2b;
+  padding: 2rem 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.servicios-title {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #d4af37;
+  font-family: 'Playfair Display', serif;
+  margin: 3rem 0 1rem;
+  margin-top: 0;
+  padding-top: 1rem;
+}
+
+.servicios-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.servicio-card {
+  background-color: #111b2e;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  color: #d4af37;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  border: 1px solid #4169a1;
+  cursor: pointer;
+  text-align: center;
+}
+
+.servicio-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px rgba(65, 105, 161, 0.5);
+}
+
+.servicio-icon {
+  font-size: 1.2rem;
+  color: #99ccff;
+}
+
+.servicio-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  font-style: normal;
+}
+
+.servicio-description {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #ffffff;
+}
+
+.servicio-vermas {
+  font-size: 0.8rem;
+  color: #99ccff;
+  font-style: normal;
+  margin-top: 0.2rem;
+  text-align: center;
+}
+
+/* ✅ Centrado y altura */
+.servicios-bloque {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 4rem 1rem 3rem;
+}
+
+.servicios-grid.especiales {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: start;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 🖼️ Imagen visible y centrada */
+.servicios-grid.especiales .servicio-card img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  align-self: center;
+  border-radius: 6px;
+  border: 2px solid #99ccff;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+}
+
+.servicios-grid.especiales .servicio-card img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .servicios-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicio-card {
+    width: 90% !important;
+    font-size: 0.9rem;
+  }
+
+  .servicios-grid.especiales {
+    grid-template-columns: 1fr !important;
+  }
+
+  .servicio-title {
+    font-size: 1.1rem;
+  }
+
+  .servicio-description {
+    font-size: 0.95rem;
+  }
+
+  .servicios-grid.especiales .servicio-card img {
+    width: 100px;
+  }
+}

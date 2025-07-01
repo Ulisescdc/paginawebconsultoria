@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.contacto-container {
+  background-color: #0c1a2b;
+  color: #d4af37;
+  font-family: 'Inter', sans-serif;
+  padding: 60px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.titulo-contacto {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-style: italic;
+  color: #d4af37;
+}
+
+.contacto-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.formulario-contacto {
+  flex: 1 1 400px;
+  background-color: #111b2e;
+  padding: 30px;
+  border-radius: 12px;
+  border: 3px solid #1f2d45;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 500px;
+}
+
+.formulario-contacto label {
+  display: block;
+  font-weight: 500;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #d4af37;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #4169a1;
+  background-color: #0c1a2b;
+  color: #d4af37;
+  font-size: 0.9rem;
+  outline: none;
+  font-style: italic;
+  transition: border-color 0.3s ease;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  border-color: #99ccff;
+}
+
+.formulario-contacto input::placeholder,
+.formulario-contacto textarea::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+.formulario-contacto button {
+  width: 100%;
+  background-color: transparent;
+  color: #d4af37;
+  padding: 12px;
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.formulario-contacto button:hover {
+  background-color: #d4af37;
+  color: #0c1a2b;
+}
+
+.mensaje-confirmacion {
+  margin-top: 1rem;
+  color: #99ccff;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.info-contacto {
+  flex: 1 1 300px;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #d4af37;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.datos-contacto {
+  line-height: 1.7;
+}
+
+.whatsapp-boton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.3s;
+  width: fit-content;
+}
+
+.whatsapp-boton:hover {
+  background-color: #1ebe57;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contacto-contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formulario-contacto,
+  .info-contacto {
+    width: 100%;
+  }
+}
