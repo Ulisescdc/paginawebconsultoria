@@ -24,10 +24,10 @@
   background-color: rgba(12, 26, 43, 0.8);
   padding: 20px;
   border-radius: 20px;
- box-shadow: 0 0 4px #00000066;
+  box-shadow: 0 0 4px #00000066;
   max-width: 300px;
-  margin-top:30px;           /* ligeramente centrado vertical */
-  margin-left: 40px;          /* centrado un poco hacia la derecha */
+  margin-top: 30px;
+  margin-left: 40px;
 }
 
 .inicio-logo img {
@@ -44,7 +44,7 @@
   box-shadow: 0 0 4px #00000088;
   font-size: 15px;
   line-height: 1.6;
-  font-weight: bold;             /* 💪 Texto en negritas */
+  font-weight: bold;
   color: #d4af37;
   margin-top: 230px;
   margin-left: 50px;
@@ -52,36 +52,45 @@
 }
 
 .inicio-subtitulo {
-  background-color: rgba(12, 26, 43, 0.65);  /* Menos opaco */
-  padding: 2px 6px;                         /* Menor tamaño */
+  background-color: rgba(12, 26, 43, 0.65);
+  padding: 2px 6px;
   border-radius: 6px;
   text-align: center;
   color: #d4af37;
   font-size: 16px;
   font-weight: bold;
-  box-shadow: 0 0 4px #00000066;             /* Sombreado más suave */
+  box-shadow: 0 0 4px #00000066;
   width: fit-content;
   margin: 0 auto;
-  margin-top: -20px; 
-  line-height: 1;                     
+  margin-top: -20px;
+  line-height: 1;
   font-family: 'Inter', sans-serif;
 }
 
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .inicio-wrapper {
     flex-direction: column;
+    align-items: center;
     text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .inicio-logo {
+    margin: 0 auto 20px;
+    max-width: 180px;
+    padding: 10px;
   }
 
   .inicio-texto {
-    font-size: 14px;
-    max-width: 100%;
-    margin-right: 0;
-    margin-left: 0;
+    margin: 0 auto 20px;
+    font-size: 13.5px;
+    padding: 15px;
   }
 
   .inicio-subtitulo {
-    font-size: 14px;
-    padding: 8px;
+    font-size: 13px;
+    padding: 6px 12px;
+    max-width: 90%;
   }
 }
