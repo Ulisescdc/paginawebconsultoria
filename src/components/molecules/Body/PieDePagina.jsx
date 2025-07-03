@@ -1,7 +1,7 @@
 import React from 'react';
 import './PieDePagina.css';
 import logo from '../assets/stem.png'; 
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import ModalPrivacidad from '../ModalPrivacidad/ModalPrivacidad';
 
 const PieDePagina = () => {
@@ -17,9 +17,12 @@ const PieDePagina = () => {
       </div>
 
       <div className="pie-social">
-        <a href="#" className="social-icon"><FaFacebookF /></a>
-        <a href="#" className="social-icon"><FaTwitter /></a>
-        <a href="#" className="social-icon"><FaLinkedinIn /></a>
+        <a href="https://www.facebook.com/profile.php?id=61555061220342&locale=es_LA" className="social-icon" target="_blank" rel="noopener noreferrer">
+          <FaFacebookF />
+        </a>
+        <a href="https://www.linkedin.com/in/ulises-rivera-f/" className="social-icon" target="_blank" rel="noopener noreferrer">
+          <FaLinkedinIn />
+        </a>
       </div>
     </footer>
   );

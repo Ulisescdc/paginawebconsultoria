@@ -5,7 +5,7 @@ import BasicLayout from './components/templates/BasicLayout/BasicLayout';
 import Inicio from './components/molecules/Body/Inicio'; 
 import Acerca from './components/molecules/Body/Acerca';
 import Trayectoria from './components/molecules/Body/Trayectoria';
-import Actualidad from './components/molecules/Body/Actualidad';
+
 import Contacto from './components/molecules/Body/Contacto';
 import PieDePagina from './components/molecules/Body/PieDePagina';
 import Servicios from './components/molecules/Body/Servicios';
@@ -18,7 +18,7 @@ function App() {
       <Acerca />
       <Trayectoria />
       <Servicios />
-      <Actualidad />
+      
       <Contacto />
       <PieDePagina />
     </div>
